@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import Button from 'react-bootstrap/Button';
 import { Link } from 'react-router-dom';
 
-import './Account.css';
+import './stylesheets/Account.css';
 import { UserContext } from '../Context/userContext';
 
 function Account() {
@@ -39,6 +39,12 @@ function Account() {
                   {userContext.user.role === 'user' ? 'View Pets' : 'View Profile'}
                 </Button>
               </Link>
+              <Link to="/change-details">
+                <Button variant="primary" className="account-button-card custom-button">
+                  Change Details
+                </Button>
+              </Link>
+              
             </div>
           </div>
         </div>
