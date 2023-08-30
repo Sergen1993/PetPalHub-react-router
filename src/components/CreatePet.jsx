@@ -91,12 +91,16 @@ const CreatePet = () => {
 
     if (userContext.user) {
         if (userContext.user.role === 'user') {
-        return (
+            return (
+                <>
+                    <div className="create-profile-title">
+                        <h1>Add Pet</h1>
+                    </div>
             <div className="create-profile-box">
-                <div className="create-profile-title">
-                    <h1>Add Pet</h1>
-                </div>
-            
+
+                <div className="create-profile-heading">
+                <h4>Pet Profile</h4>
+            </div>            
 
             <div className='avatar-preview'>
                 {avatar ? (
@@ -117,9 +121,7 @@ const CreatePet = () => {
             </div>
 
 
-            <div className="create-profile-heading">
-                <h4>Pet Profile</h4>
-            </div>
+
                 <div>
                     <h4>Pet Type</h4>
                 </div>
@@ -183,13 +185,12 @@ const CreatePet = () => {
                 <button variant="primary" className="size-sm-lg btn btn-primary" onClick={handleCreatePet}>Add Pet</button>
             </div>
             </div>
-        );
+                </>
+            );
+        } else {
+            return <h1>Hello</h1>;
         }
-        else return (
-        <h1>Hello</h1>
-        )
-        
     }
-}
+};
 
 export default CreatePet;

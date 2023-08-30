@@ -1,3 +1,9 @@
+
+* {
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
 .create-profile-box {
     margin: 2rem auto;
     width: 80%;
@@ -11,9 +17,14 @@
 }
 
 .create-profile-title h1 {
+    background-color: #FFC107;
+    padding: 15px 25px;
+    border-radius: 10px;
+    margin-bottom: 140px;
     text-align: center;
-    color: #333;
-    margin-bottom: 1rem;
+    color: black;
+    font-weight: bold;
+    font-size: 24px;
 }
 
 .profile-avatar, .avatar-preview {
