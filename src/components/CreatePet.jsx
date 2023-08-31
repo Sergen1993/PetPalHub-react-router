@@ -114,17 +114,18 @@ const CreatePet = () => {
 
             <div className="upload-avatar">
                 <input
-                type="file"
-                accept="image/*"
-                onChange={handleAvatarUpload}
+                    id="avatarInput"
+                    type="file"
+                    accept="image/*"
+                    onChange={handleAvatarUpload}
                 />
+                <label htmlFor="avatarInput">Choose File</label>
             </div>
 
 
-
-                <div>
-                    <h4>Pet Type</h4>
-                </div>
+            <div>
+            <h4 className="pet-details-title">Pet Details</h4>
+            </div>
             <div>
                 <label htmlFor="petType">Pet type:</label>
                 <select value={pet.petType} onChange={(e) => setPet({ ...pet, petType: e.target.value })} id="petType" name="petType">
