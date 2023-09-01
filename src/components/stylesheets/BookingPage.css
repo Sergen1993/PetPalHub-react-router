@@ -9,6 +9,22 @@
     color: black;
   }
   
+.title {
+    background-color: #FFC107;
+    padding: 13px 25px;
+    border-radius: 10px;
+    margin: 20px auto;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    font-size: 24px;
+    width: fit-content;
+}
+
+.title h2 {
+    margin: 0;
+}
+
   .booking-form-title-card h2 {
     text-align: center;
     color: #333;
@@ -86,8 +102,8 @@
     background-color: #0056b3;
   }
   
-  /* Additional styles for tablet view */
-  @media (min-width: 600px) and (max-width: 767px) {
+  /* Tablet view */
+  @media (min-width: 680px) and (min-width: 998px) {
     .booking-form-box-card {
       width: 70%;
       margin: 2rem auto;
@@ -111,14 +127,22 @@
     .booking-form-button-container-card {
       margin-top: 2rem;
     }
+
+    .pet-pal-request-box-card h3 {
+      text-align: center;
+    }
   }
   
-  /* Additional styles for desktop view */
-  @media (min-width: 768px) {
+  /* Desktop view */
+  @media (min-width: 998px) {
     .booking-form-box-card {
       width: 60%;
     }
   
+    .pet-pal-request-box-card h3 {
+      text-align: center;
+    }
+
     .booking-form-container-card {
       text-align: center;
     }

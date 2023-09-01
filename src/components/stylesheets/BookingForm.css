@@ -50,7 +50,7 @@
   margin-top: 4rem;
   color: #373939;
   display: block;
-  text-align: left; /* This will be changed in the media query */
+  text-align: left; 
   font-weight: bold;
 }
 
@@ -169,7 +169,6 @@
     width: 60%;
   }
 
-  /* Centering adjustments */
   .booking-form-container-card h5,
   .booking-form-container-card h4,
   .booking-form-container-card label,

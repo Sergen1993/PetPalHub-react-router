@@ -10,14 +10,6 @@
     position: relative;
 }
 
-/* .create-profile-box { */
-    /* Additional styles for the overall box if needed */
-
-
-/* .profile-content { */
-    /* Additional styles for the main content container if needed */
-
-
 .profile-header {
     display: flex;
     align-items: center;
@@ -39,7 +31,6 @@
     height: 200px;
     width: 200px;
     background-color: #e2e2e2;
-    border-radius: 50%;
     overflow: hidden;
     margin: 0 auto;
     margin-bottom: 1rem;
@@ -49,8 +40,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center; /* Centers the image */
-    border-radius: 50%; /* To ensure the image is circular even if the actual image isn't square */
+    object-position: center; 
 }
 
 .profile-title {
