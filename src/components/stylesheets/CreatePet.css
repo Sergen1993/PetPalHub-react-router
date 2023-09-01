@@ -54,7 +54,7 @@
 }
 
 .pet-details-title {
-    margin-top: 4rem;  /* adjust this value as needed */
+    margin-top: 4rem;
 }
 
 .create-profile-heading h4, .create-profile-heading h5 {
@@ -66,12 +66,12 @@
 }
 
 .upload-avatar input[type="file"] {
-    opacity: 0;  /* Makes the input invisible but still clickable */
-    width: 100%; /* Makes sure it covers the full width of the container */
-    position: absolute; /* Takes it out of the normal flow to overlay on the label */
-    left: 50%; /* Center align it horizontally */
-    transform: translateX(-50%); /* Fine-tune horizontal centering */
-    cursor: pointer; /* Ensures pointer on hover */
+    opacity: 0;
+    width: 100%;
+    position: absolute; 
+    left: 50%; 
+    transform: translateX(-50%);
+    cursor: pointer;
 }
 
 .upload-avatar {
@@ -111,7 +111,7 @@
 }
 
 .create-profile-heading h5 {
-    margin-top: 4rem; /* adjust this value as needed */
+    margin-top: 4rem; 
 }
 
 .create-profile-heading h4 {
@@ -137,7 +137,7 @@ label {
     display: block;
     margin-top: 1rem;
     color: #373939;
-    font-weight: bold;  /* Making the labels bold */
+    font-weight: bold;
 }
 
 input[type="text"],

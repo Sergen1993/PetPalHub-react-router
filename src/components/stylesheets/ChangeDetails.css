@@ -4,15 +4,15 @@
 }
 
 .centered-container-change-details h1 {
-    background-color: #FFC107; /* matches */
-    padding: 15px 25px; /* updated to match */
-    border-radius: 10px; /* matches */
-    margin: 20px auto; /* only the vertical margin changed to center it, you might adjust if needed */
-    text-align: center; /* matches */
-    color: black; /* matches */
-    font-weight: 700; /* updated to match */
-    font-size: 27px; /* matches */
-    width: fit-content; /* retained as specific for this class */
+    background-color: #FFC107; 
+    padding: 15px 25px; 
+    border-radius: 10px; 
+    margin: 20px auto; 
+    text-align: center; 
+    color: black; 
+    font-weight: 700; 
+    font-size: 27px; 
+    width: fit-content; 
 }
 
 .signup-user-form {

@@ -55,23 +55,26 @@ const ViewPets = () => {
     };
 
     return (
-        <div className="view-pets-container-view">
-            <h1>View Pets</h1>
+        <div className="view-pets-wrapper">
+            <div className="view-pets-title">
+                <h1>View Pets</h1>
+            </div>
+            
             <div className="pets-list-view">
                 {petProfile ? (
                     petProfile.map((pet) => (
                         <div className="pet-card-view" key={pet._id}>
                             <div className="pet-avatar-view">
-                            {pet.petImage ? (
-                                <img
-                                    src={`http://localhost:5505${pet.petImage}`}
-                                    alt="Profile"
-                                    className="avatar-preview1"
-                                />
+                                {pet.petImage ? (
+                                    <img
+                                        src={`http://localhost:5505${pet.petImage}`}
+                                        alt="Profile"
+                                        className="avatar-preview1"
+                                    />
                                 ) : (
-                                <div className="placeholder-avatar">
-                                    <h3>No Profile Picture</h3>
-                                </div>
+                                    <div className="placeholder-avatar">
+                                        <h3>No Profile Picture</h3>
+                                    </div>
                                 )}
                             </div>
                             <div className="pet-details-view">
@@ -90,8 +93,8 @@ const ViewPets = () => {
                                     <h4>General Info:</h4>
                                     <p>{pet.general}</p>
                                 </div>
+                                <Button className="pet-delete-btn btn btn-danger" onClick={() => handleDeletePet(pet._id)}>Delete</Button>
                             </div>
-                            <Button className="size-sm-lg btn btn-danger" onClick={() => handleDeletePet(pet._id)}>Delete</Button>
                         </div>
                     ))
                 ) : (
